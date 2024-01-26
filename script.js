@@ -43,7 +43,7 @@ async function fetchTime(){
     for(key in countryCode){
         if(countryCode[key] == codeofcountry) {codeofcountry = key; break;}
     }
-    const url = `http://worldtimeapi.org/api/timezone/${codeofcountry}`;
+    const url = `https://worldtimeapi.org/api/timezone/${codeofcountry}`;
     const data = await fetch(url);
     const result = await data.json();
     const pushed = await result.datetime;
