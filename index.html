@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+            <div class="input-box">
+                <img src="/img/logo.png" alt="logo">
+                <input list="country" placeholder="Enter Country Name...">
+                <datalist id="country">
+                    <option value="Select Country" default>Select Country</option>
+                </datalist>
+                <button id="sync-time">Sync Clock</button>
+            </div>
+            <div id="background"></div>
+            <div class="result-box">
+                <h2 id="country-name">INDIA</h2>
+                <h2 id="country-code">IN</h2>
+                <div id="flag">
+                    <img src="https://flagsapi.com/IN/flat/64.png" alt="flag">
+                </div>
+                <div>
+                    <h2 id="time">00:00:00</h2>
+                    <p id="utc">UTC/IST : +5:30 hours</p>
+                    <p id="date"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="randomimg.js"></script>
+</body>
+</html>
